@@ -1,0 +1,168 @@
+// ============================================================
+// Home 
+// ============================================================
+
+.filters {
+
+	ul {
+
+		@include cf;
+		text-align: center;
+
+		li {
+
+			display: inline-block;
+			margin: 0 $baseline/2 $baseline/2 0;
+
+			a {
+
+				color: $col-black;
+				display: block;
+				background: $col-lightgrey;
+				padding: $baseline/10 $baseline;
+				@include transition(all .2s ease-in-out);
+
+				&:hover {
+
+					background: $col-grey;
+					text-decoration: none;
+
+				}
+
+				&.active {
+
+					background: $col-blue;
+					color: $col-white;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.all-recipes {
+
+	background: $col-lightgrey;
+
+	li {
+
+		.padding {
+
+			background: $col-white;
+
+		}
+
+		h3 {
+
+			text-align: center;
+
+		}
+
+	}
+
+}
+
+// Animations
+.animate.ng-enter,
+.animate.ng-leave,
+.animate.ng-move {
+  @include transition(.1s linear all);
+}
+.animate.ng-enter-stagger,
+.animate.ng-leave-stagger {
+	transition-delay: .1s;
+}
+.animate.ng-enter,
+.animate.ng-move {
+  opacity: 0;
+  @include scale(.7);
+  overflow: hidden;
+}
+.animate.ng-move.ng-move-active,
+.animate.ng-enter.ng-enter-active {
+   opacity: 1;
+   @include scale(1);
+}
+.animate.ng-leave {
+  opacity: 1;
+  overflow: hidden;
+}
+.animate.ng-leave.ng-leave-active {
+  opacity: 0;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+// Rotate 
+.svg-wrapper {
+	
+	display: block;
+	text-align: center;
+
+}
+.svg-icon {
+
+	width: 32px;
+	height: 32px;
+
+}
+.svg-icon-l {
+
+	width: 62px;
+	height: 62px;
+
+}
+.spinner {
+	
+	-webkit-animation-name: spin;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+// .bounce {
+
+// 	-webkit-animation: bounce 1s infinite;
+
+// }
+
+@include keyframes(spin) {
+
+	from { @include transform(rotate(0deg)) }
+    to { @include transform(rotate(360deg)) }
+
+}
+
+@include keyframes(bounce) {
+
+	0%       { margin-bottom:-4px; }
+	25%, 75% { margin-bottom:-8px; }
+	50%      { margin-bottom:-12px; }
+	100%     { margin-bottom:0;}
+
+}
+
+
+// ============================================================

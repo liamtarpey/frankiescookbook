@@ -1,0 +1,26 @@
+// ============================================================
+// HEADER 
+// ============================================================
+
+.global-header {
+
+	text-align: center;
+
+	.global-logo {
+
+		color: $col-black;
+		border-bottom: 4px solid $col-blue;
+		@include font(50);
+		font-weight: 700;
+
+		&:hover {
+
+			text-decoration: none;
+
+		}
+
+	}
+
+}
+
+// ============================================================

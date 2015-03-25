@@ -1,2 +1,2 @@
-# frankiescookbook
-AngularJS SPA Cooking Blog
+frankiescookbook
+================
