@@ -1,0 +1,43 @@
+.downloads {
+    margin-bottom: u(48px);
+}
+.downloads__list {
+    border: u(1px) solid $color-grey;
+}
+.downloads__item {
+    @include flexbox;
+    @include align-items(center);
+    border-bottom: u(1px) solid $color-grey;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+// Left
+.downloads__icon {
+    padding: u(24px);
+    border-right: u(1px) solid $color-grey;
+}
+.downloads__icon .icon {
+    width: u(28px);
+    height: u(28px);
+    display: block;
+    @include align-self(center);
+}
+
+// Center
+.downloads__copy {
+    padding: u(24px);
+    @include align-self(center);
+}
+.downloads__copy h3,
+.downloads__copy p {
+    margin: 0;
+}
+
+// Right
+.downloads__cta {
+    margin-left: auto;
+    padding-right: u(24px);
+}

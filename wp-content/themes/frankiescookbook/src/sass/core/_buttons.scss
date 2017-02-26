@@ -1,0 +1,33 @@
+// General button styles
+input[type="submit"],
+button,
+.btn {
+    background: $color-primary;
+    color: $color-light;
+    padding: u(12px 36px);
+    border-radius: u(2px);
+    border: none;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    @include Montserrat;
+}
+
+// Primary style button
+.btn--primary {
+    //background: $color-secondary;
+}
+.btn--primary span {
+    vertical-align: middle;
+}
+.btn--primary .icon {
+    margin-right: u(6px);
+    fill: $color-light;
+    width: u(28px);
+    height: u(28px);
+}
+
+// Sizes
+.btn--small {
+    padding: u(6px 24px);
+}

@@ -1,0 +1,52 @@
+/* PX to REM
+ * Converts px values into rem values
+ * input:  padding: u(20px 15px 25px 0);
+ *         margin: u(20px auto);
+ *
+ * output: padding: 1.25rem 0.9375rem 1.5625rem 0;
+ *         margin: 1.25rem auto;
+----------------------------------------- */
+
+/**
+ * Default browsers pixel base
+ */
+$pixel-base : 16;
+
+/**
+ * parseInt()
+ * returns a number from a string
+ * source: http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+ */
+@function parseInt($n) {
+    @return $n / ($n * 0 + 1); /* 2 */
+}
+
+/**
+ * u() (u is for unit)
+ * Converts px values into rem values
+ * source: http://davidwalsh.name/rem-px-browser-function-sass
+ */
+@function u($values){
+    $list: ();
+
+    @each $value in $values { // Loop through all items
+
+        @if (type-of($value) == 'number') and ($value != 0) {
+
+            $val  : parseInt($value);    // get number
+            $unit : unit($value);        // get unit
+
+            @if ($unit == 'px') { /* 9 */
+                $list: append($list, ($val / $pixel-base) + rem); //return rem value
+            } @else {
+                @warn 'There is no unit conversion for "#{$unit}"';
+            }
+
+        } @else {
+            // append value without modification (for strings like 'auto', 'position'...)
+            $list: append($list, $value);
+        }
+    }
+
+    @return $list();
+}

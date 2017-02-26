@@ -28,7 +28,9 @@ var paths = {
             basePaths.src + 'libs/angular-route.js',
             basePaths.src + 'libs/underscore.js',
             basePaths.src + 'app.js',
+            basePaths.src + 'routing.js',
             basePaths.src + 'config.js',
+            basePaths.src + 'endpoints.js',
             basePaths.src + 'views/**/*.js',
             basePaths.src + 'components/**/*.js'
         ],

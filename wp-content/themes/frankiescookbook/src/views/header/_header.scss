@@ -1,0 +1,13 @@
+.app-header {
+    background: $color-primary;
+    @include cf;
+    padding: u(12px 24px);
+}
+
+#logo a {
+    float: left;
+    text-decoration: none;
+    color: $color-light;
+    font-family: $font-header;
+    text-transform: uppercase;
+}

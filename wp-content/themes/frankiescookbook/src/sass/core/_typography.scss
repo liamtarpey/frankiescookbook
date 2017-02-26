@@ -1,0 +1,53 @@
+
+body {
+    font-family: $font-copy;
+    font-size: $font-size-m;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-header;
+    margin: u(0 0 24px 0);
+}
+
+h1 {
+    font-size: $font-size-xxl;
+}
+h2 {
+    font-size: $font-size-xl;
+}
+h3 {
+    font-size: $font-size-l;
+}
+h4 {
+    font-size: $font-size-m;
+}
+h5, h5 {
+    font-size: $font-size-s;
+}
+
+p {
+    margin: u(0 0 12px 0);
+    //color: $color-grey-dark;
+}
+
+// .icon-text is <span class="icon">svg icon</span> with <span>text</span> aligned
+.icon-text {
+    margin-bottom: u(12px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.icon-text .icon {
+    width: u(20px);
+    height: u(20px);
+    margin-right: u(6px);
+}
+.icon-text span:not(.icon) {
+    vertical-align: top;
+    @include Montserrat;
+}
+.icon-text span a {
+    vertical-align: inherit;
+}

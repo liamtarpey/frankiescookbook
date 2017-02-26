@@ -1,0 +1,32 @@
+
+// Labels
+label {
+    color: $color-grey-dark;
+    @include Montserrat;
+    font-size: u(14px);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+// Text/email/password fields
+input[type="text"],
+input[type="email"],
+input[type="password"],
+.input {
+    padding: u(12px);
+    border-radius: u(2px);
+    border: u(1px) solid $color-grey-dark;
+    width: 100%;
+    max-width: u(520px);
+
+    &:focus {
+        outline: none;
+        //border: u(1px) solid $color-secondary;
+    }
+}
+
+// Textareas
+textarea {
+    @extend .input;
+    resize: none;
+}

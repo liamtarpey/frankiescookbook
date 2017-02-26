@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background: $color-light;
+}
+
+// Screen reader
+.screen-reader-response {
+    display: none;
+}
+
+// Main wrapper
+.wrapper {
+    width: 100%;
+    max-width: u(980px);
+    margin: u(24px auto);
+}
+
+// Narrow wrapper
+.wrapper--narrow {
+    max-width: u(720px);
+}
+
+// Wrapper paddings
+.wrapper--padding {
+    padding: u(12px);
+}
+.wrapper--padding-x {
+    padding-left: u(12px);
+    padding-right: u(12px);
+}
+.wrapper--padding-y {
+    padding-top: u(12px);
+    padding-bottom: u(12px);
+}
+.wrapper--padding-content {
+    padding: u(36px 12px);
+}
+
+// Main layout
+.layout-wrap {
+    @include flexbox;
+    @include justify-content(space-between);
+}
+
+.main-content {
+    width: 67%;
+}
+
+.sidebar {
+    width: 27%;
+}

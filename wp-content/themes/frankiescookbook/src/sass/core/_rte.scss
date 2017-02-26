@@ -1,0 +1,13 @@
+.rte {
+    margin-bottom: u(48px);
+}
+
+// Links
+.rte a {
+    //color: $color-secondary;
+    text-decoration: none;
+
+    &:hover {
+        border-bottom: 2px solid $color-primary;
+    }
+}

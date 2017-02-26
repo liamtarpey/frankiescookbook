@@ -1,0 +1,31 @@
+.tabs {
+    // Wraps all tabs, might not need styles?
+}
+
+.tabs__buttons {
+
+}
+.tabs__button {
+    display: inline-block;
+}
+.tabs__button-anchor {
+    background: $color-grey-dark;
+    padding: u(12px 48px);
+    display: block;
+    color: $color-light;
+    text-decoration: none;
+}
+.tabs__button-anchor.active {
+    background: $color-primary;
+}
+
+.tabs__content {
+    padding: u(24px);
+    border: u(3px) solid $color-primary;
+}
+.tabs__item {
+
+}
+.tabs__item {
+
+}

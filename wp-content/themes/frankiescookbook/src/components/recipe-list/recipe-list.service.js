@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    var RecipeListService = function($http, $q) {
+    var RecipeListService = function($http, $q, endpoints) {
 
         /**
          * Gets all posts
@@ -18,7 +18,7 @@
                 deferred.reject(err);
             };
 
-            var url = '/wp-json/wp/v2/posts';
+            var url = endpoints.get.posts;
             $http.get(url).then(onSuccess).catch(onRejected);
 
             return deferred.promise;
@@ -32,6 +32,6 @@
 
     var vm = this;
 
-    RecipeListService.$inject = ['$http', '$q'];
+    RecipeListService.$inject = ['$http', '$q', 'endpoints'];
     app.factory('RecipeListService', RecipeListService);
 })();
