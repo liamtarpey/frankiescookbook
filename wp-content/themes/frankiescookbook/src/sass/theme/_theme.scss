@@ -1,11 +1,11 @@
 // Colours
-$color-primary: #18c3c3;
+$color-primary: rgb(41, 124, 187);
 
 $color-light: #fff;
 $color-grey: #f1f1f1;
-$color-grey-dark: #999;
+$color-grey-dark: #67747c;
 
-$color-dark: #1F1F26;
+$color-dark: #2c3643;
 
 // MQ sizes
 $lg : 1200px;
@@ -13,14 +13,14 @@ $md : 840px;
 $sm : 450px;
 
 // Fonts
-$font-header: 'Montserrat', sans-serif;
-$font-copy: 'Cardo', serif;
+$font-header: 'Quattrocento', sans-serif;
+$font-copy: 'Quattrocento Sans', serif;
 
 // Font sizes
 $font-size-xxxl: u(56px);
 $font-size-xxl: u(48px);
 $font-size-xl: u(36px);
-$font-size-l: u(28px);
-$font-size-m: u(18px);
-$font-size-s: u(14px);
-$font-size-xs: u(12px);
+$font-size-l: u(22px);
+$font-size-m: u(16px);
+$font-size-s: u(12px);
+$font-size-xs: u(10px);

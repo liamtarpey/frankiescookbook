@@ -62,5 +62,6 @@ add_action( 'init', 'register_my_menu' );
 
 // Register image sizes
 add_image_size('width-500', 500);
+add_image_size('width-full', 1400);
 
 ?>

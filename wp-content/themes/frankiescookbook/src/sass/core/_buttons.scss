@@ -10,7 +10,7 @@ button,
     text-decoration: none;
     border-radius: 30px;
     display: inline-block;
-    @include Montserrat;
+    font-family: $font-header;
 }
 
 // Primary style button

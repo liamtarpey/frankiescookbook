@@ -423,28 +423,37 @@ template {
 [hidden] {
   display: none; }
 
-/* latin */
+/* latin-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Quattrocento';
   font-style: normal;
   font-weight: 400;
-  src: local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+  src: local("Quattrocento"), url(https://fonts.gstatic.com/s/quattrocento/v8/WZDISdyil4HsmirlOdBRFIjoYw3YTyktCCer_ilOlhE.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
 
 /* latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Quattrocento';
   font-style: normal;
-  font-weight: 700;
-  src: local("Montserrat-Bold"), url(https://fonts.gstatic.com/s/montserrat/v7/IQHow_FEYlDC4Gzy_m8fcmaVI6zN22yiurzcBKxPjFE.woff2) format("woff2");
+  font-weight: 400;
+  src: local("Quattrocento"), url(https://fonts.gstatic.com/s/quattrocento/v8/WZDISdyil4HsmirlOdBRFBampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
 
 /* latin */
+/* latin-ext */
 @font-face {
-  font-family: 'Cardo';
+  font-family: 'Quattrocento Sans';
   font-style: normal;
   font-weight: 400;
-  src: local("Cardo"), local("Cardo-Regular"), url(https://fonts.gstatic.com/s/cardo/v8/f9GbO0_LnwwuaRC6yAh0JKCWcynf_cDxXwCLxiixG1c.woff2) format("woff2");
+  src: local("Quattrocento Sans"), local("QuattrocentoSans"), url(https://fonts.gstatic.com/s/quattrocentosans/v9/efd6FGWWGX5Z3ztwLBrG9X1YW00lgGbZnyY5SugJ188.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Quattrocento Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Quattrocento Sans"), local("QuattrocentoSans"), url(https://fonts.gstatic.com/s/quattrocentosans/v9/efd6FGWWGX5Z3ztwLBrG9czpYVnxV7fe3GzmF357o4o.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
 
 html {
@@ -461,7 +470,7 @@ body {
 
 .wrapper {
   width: 100%;
-  max-width: 61.25rem;
+  max-width: 80.625rem;
   margin: 1.5rem auto; }
 
 .wrapper--narrow {
@@ -494,15 +503,12 @@ body {
   justify-content: space-between; }
 
 .main-content {
-  width: 67%; }
-
-.sidebar {
-  width: 27%; }
+  width: 100%; }
 
 input[type="submit"],
 button,
 .btn {
-  background: #18c3c3;
+  background: #297cbb;
   color: #fff;
   padding: 0.75rem 2.25rem;
   border-radius: 0.125rem;
@@ -510,7 +516,7 @@ button,
   text-decoration: none;
   border-radius: 30px;
   display: inline-block;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Quattrocento", sans-serif; }
 
 .btn--primary span {
   vertical-align: middle; }
@@ -574,8 +580,8 @@ button,
   padding-right: 1.5rem; }
 
 label {
-  color: #999;
-  font-family: 'Montserrat', sans-serif;
+  color: #67747c;
+  font-family: "Quattrocento", sans-serif;
   font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: 700; }
@@ -587,9 +593,10 @@ input[type="password"],
 textarea {
   padding: 0.75rem;
   border-radius: 0.125rem;
-  border: 0.0625rem solid #999;
+  border: 0.0625rem solid #67747c;
   width: 100%;
-  max-width: 32.5rem; }
+  max-width: 32.5rem;
+  font-family: "Quattrocento Sans", serif; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="password"]:focus,
@@ -609,6 +616,11 @@ img.img-full {
   text-decoration: none;
   color: inherit; }
 
+.cta-link, .recipe-list__featured-category ul li a {
+  text-transform: uppercase;
+  color: #297cbb;
+  font-size: 0.75rem; }
+
 ul.no-list,
 ol.no-list {
   list-style: none;
@@ -621,7 +633,7 @@ ol.no-list {
 .rte a {
   text-decoration: none; }
   .rte a:hover {
-    border-bottom: 2px solid #18c3c3; }
+    border-bottom: 2px solid #297cbb; }
 
 .icon {
   display: inline-block; }
@@ -636,27 +648,27 @@ ol.no-list {
   display: inline-block; }
 
 .tabs__button-anchor {
-  background: #999;
+  background: #67747c;
   padding: 0.75rem 3rem;
   display: block;
   color: #fff;
   text-decoration: none; }
 
 .tabs__button-anchor.active {
-  background: #18c3c3; }
+  background: #297cbb; }
 
 .tabs__content {
   padding: 1.5rem;
-  border: 0.1875rem solid #18c3c3; }
+  border: 0.1875rem solid #297cbb; }
 
 body {
-  font-family: "Cardo", serif;
-  font-size: 1.125rem;
+  font-family: "Quattrocento Sans", serif;
+  font-size: 1rem;
   line-height: 1.6; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
-  margin: 0 0 1.5rem 0; }
+  font-family: "Quattrocento", sans-serif;
+  margin: 0 0 0.75rem 0; }
 
 h1 {
   font-size: 3rem; }
@@ -665,16 +677,17 @@ h2 {
   font-size: 2.25rem; }
 
 h3 {
-  font-size: 1.75rem; }
+  font-size: 1.375rem; }
 
 h4 {
-  font-size: 1.125rem; }
+  font-size: 1rem; }
 
 h5, h5 {
-  font-size: 0.875rem; }
+  font-size: 0.75rem; }
 
 p {
-  margin: 0 0 0.75rem 0; }
+  margin: 0 0 0.75rem 0;
+  color: #67747c; }
 
 .icon-text {
   margin-bottom: 0.75rem; }
@@ -688,29 +701,146 @@ p {
 
 .icon-text span:not(.icon) {
   vertical-align: top;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Quattrocento", sans-serif; }
 
 .icon-text span a {
   vertical-align: inherit; }
 
 .app-header {
-  background: #18c3c3;
-  padding: 0.75rem 1.5rem; }
+  border-bottom: 0.0625rem solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 0 1.25rem 0;
+  margin: 0 3.75rem; }
   .app-header:before, .app-header:after {
     content: '';
     display: table; }
   .app-header:after {
     clear: both; }
 
-#logo a {
-  float: left;
-  text-decoration: none;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase; }
+.header__search-prompt {
+  float: left; }
+  .header__search-prompt a {
+    display: block;
+    text-decoration: none; }
+  .header__search-prompt span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 1.375rem; }
+  .header__search-prompt .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.875rem;
+    height: 1.875rem;
+    margin-right: 0.75rem; }
+    .header__search-prompt .icon svg {
+      fill: #fff; }
+
+.header__search-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  transform: translateY(-100%);
+  transition: all .2s ease; }
+  .header__search-bar input {
+    padding: 2.5rem 6.25rem 2.5rem 5.375rem;
+    border: none;
+    max-width: 100%;
+    font-size: 1.375rem; }
+
+.header__search-bar-icon {
+  position: absolute;
+  left: 2.625rem;
+  top: 2.375rem; }
+  .header__search-bar-icon .icon {
+    display: block;
+    width: 1.625rem;
+    height: 1.625rem; }
+  .header__search-bar-icon svg {
+    fill: #297cbb; }
+
+.header__search-bar-close {
+  position: absolute;
+  right: 2.625rem;
+  top: 2.625rem; }
+  .header__search-bar-close .icon {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem; }
+  .header__search-bar-close svg {
+    fill: #297cbb; }
+
+.header__search-bar--active {
+  transform: translateY(0); }
 
 .main-footer {
-  background-color: #18c3c3; }
+  background-color: #297cbb; }
+
+.recipe-list__latest {
+  margin-bottom: 12.5rem; }
+
+.recipe-list__latest-image {
+  display: block;
+  height: 500px;
+  background-postion: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-decoration: none; }
+
+.recipe-list__latest-title {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 5%;
+  bottom: 30%;
+  margin: 0;
+  padding: 0 0.75rem; }
+
+.recipe-list__featured {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  margin-bottom: 3.125rem; }
+
+.recipe-list__featured-details {
+  width: 40%; }
+
+.recipe-list__featured-category ul {
+  margin: 0;
+  padding: 0; }
+  .recipe-list__featured-category ul li {
+    display: none;
+    line-height: 1.4; }
+    .recipe-list__featured-category ul li:first-child {
+      display: block; }
+    .recipe-list__featured-category ul li a {
+      text-decoration: none; }
+
+.recipe-list__featured-image {
+  width: 57%;
+  margin-left: auto;
+  padding-top: 35rem;
+  background-postion: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .recipe-list {
   list-style: none;
@@ -731,8 +861,13 @@ p {
   -moz-justify-content: space-between;
   justify-content: space-between; }
 
+.recipe-list__header {
+  text-align: center;
+  margin-bottom: 3rem; }
+
 .recipe-list__item {
-  width: 47%; }
+  width: 31%;
+  position: relative; }
 
 .recipe-list__image {
   display: block;
@@ -745,7 +880,7 @@ p {
   background-size: cover; }
 
 .recipe-list__meta {
-  padding: 0.75rem 0; }
+  padding: 1.875rem 0 0.75rem 0; }
   .recipe-list__meta:before, .recipe-list__meta:after {
     content: '';
     display: table; }
@@ -759,14 +894,23 @@ p {
 .recipe-list__meta-item .icon {
   width: 1.25rem;
   height: 1.25rem;
-  fill: #999;
+  fill: #67747c;
   display: inline-block; }
 
 .recipe-list__meta-item span {
-  color: #999;
+  color: #67747c;
   font-style: italic;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   vertical-align: top; }
 
 .recipe-list__title {
-  font-size: 1.125rem; }
+  position: absolute;
+  left: -0.625rem;
+  bottom: 3.875rem;
+  background-color: #297cbb;
+  color: #fff;
+  padding: 0.75rem; }
+
+.recipe-list__title h3 {
+  font-size: 1rem;
+  margin: 0; }

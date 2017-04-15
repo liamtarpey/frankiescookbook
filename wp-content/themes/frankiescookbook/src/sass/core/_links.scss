@@ -5,3 +5,8 @@ a {
     text-decoration: none;
     color: inherit;
 }
+.cta-link {
+    text-transform: uppercase;
+    color: $color-primary;
+    font-size: $font-size-s;
+}

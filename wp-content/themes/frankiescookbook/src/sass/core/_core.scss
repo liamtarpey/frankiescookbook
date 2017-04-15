@@ -17,7 +17,7 @@ body {
 // Main wrapper
 .wrapper {
     width: 100%;
-    max-width: u(980px);
+    max-width: u(1290px);
     margin: u(24px auto);
 }
 
@@ -49,9 +49,9 @@ body {
 }
 
 .main-content {
-    width: 67%;
+    width: 100%;
 }
 
-.sidebar {
-    width: 27%;
-}
+// .sidebar {
+//     width: 27%;
+// }

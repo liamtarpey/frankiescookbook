@@ -7,7 +7,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-header;
-    margin: u(0 0 24px 0);
+    margin: u(0 0 12px 0);
 }
 
 h1 {
@@ -28,7 +28,7 @@ h5, h5 {
 
 p {
     margin: u(0 0 12px 0);
-    //color: $color-grey-dark;
+    color: $color-grey-dark;
 }
 
 // .icon-text is <span class="icon">svg icon</span> with <span>text</span> aligned
@@ -46,7 +46,7 @@ p {
 }
 .icon-text span:not(.icon) {
     vertical-align: top;
-    @include Montserrat;
+    font-family: $font-header;
 }
 .icon-text span a {
     vertical-align: inherit;

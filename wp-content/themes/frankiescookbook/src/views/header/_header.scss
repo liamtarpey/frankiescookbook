@@ -1,13 +1,98 @@
 .app-header {
-    background: $color-primary;
+    border-bottom: u(1px) solid $color-light;
     @include cf;
-    padding: u(12px 24px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: u(24px 0 20px 0);
+    margin: u(0 60px);
 }
 
-#logo a {
+.header__search-prompt {
     float: left;
-    text-decoration: none;
-    color: $color-light;
-    font-family: $font-header;
-    text-transform: uppercase;
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
+
+    span {
+        display: inline-block;
+        vertical-align: middle;
+        color: $color-light;
+        font-size: $font-size-l;
+    }
+
+    .icon {
+        display: inline-block;
+        vertical-align: middle;
+        width: u(30px);
+        height: u(30px);
+        margin-right: u(12px);
+
+        svg {
+            fill: $color-light;
+        }
+    }
 }
+
+.header__search-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $color-light;
+    transform: translateY(-100%);
+    transition: all .2s ease;
+
+    input {
+        padding: u(40px 100px 40px 86px);
+        border: none;
+        max-width: 100%;
+        font-size: $font-size-l;
+    }
+}
+.header__search-bar-icon {
+    position: absolute;
+    left: u(42px);
+    top: u(38px);
+
+    .icon {
+        display: block;
+        width: u(26px);
+        height: u(26px);
+    }
+
+    svg {
+        fill: $color-primary;
+    }
+}
+.header__search-bar-close {
+    position: absolute;
+    right: u(42px);
+    top: u(42px);
+
+    .icon {
+        display: block;
+        width: u(20px);
+        height: u(20px);
+    }
+
+    svg {
+        fill: $color-primary;
+    }
+}
+.header__search-bar--active {
+    transform: translateY(0);
+}
+
+// #logo a {
+//     float: left;
+//     text-decoration: none;
+//     color: $color-dark;
+//     font-family: $font-header;
+//     text-transform: uppercase;
+//     font-weight: bold;
+//     line-height: u(46px);
+// }
