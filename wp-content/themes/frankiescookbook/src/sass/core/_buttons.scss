@@ -2,7 +2,7 @@
 input[type="submit"],
 button,
 .btn {
-    background: $color-primary;
+    background-color: $color-primary;
     color: $color-light;
     padding: u(12px 36px);
     border-radius: u(2px);
@@ -11,6 +11,11 @@ button,
     border-radius: 30px;
     display: inline-block;
     font-family: $font-header;
+    transition: all .2s ease;
+
+    &:hover {
+        background-color: lighten($color-primary, 10%);
+    }
 }
 
 // Primary style button

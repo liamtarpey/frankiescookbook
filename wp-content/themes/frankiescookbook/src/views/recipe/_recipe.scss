@@ -1,0 +1,26 @@
+.single-recipe__hero {
+    @include background-cover;
+    height: u(400px);
+    position: relative;
+
+    h1 {
+        position: absolute;
+        left: 5%;
+        bottom: 30%;
+        color: $color-light;
+    }
+}
+
+.single-recipe__full-method {
+    padding: u(48px 0);
+    border-top: 1px solid $color-grey;
+    border-bottom: 1px solid $color-grey;
+    @include flexbox;
+}
+.single-recipe__ingredients {
+    width: 40%;
+}
+.single-recipe__method {
+    width: 57%;
+    margin-left: auto;
+}

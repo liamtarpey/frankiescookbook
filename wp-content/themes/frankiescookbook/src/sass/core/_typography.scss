@@ -51,3 +51,21 @@ p {
 .icon-text span a {
     vertical-align: inherit;
 }
+
+// RTE
+.rte {
+    text-align: center;
+
+    a ~ img {
+        pointer-events: none;
+    }
+
+    img {
+        @extend .img-full;
+        margin-bottom: u(24px);
+    }
+
+    p {
+        margin-bottom: u(48px);
+    }
+}

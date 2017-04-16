@@ -1,3 +1,30 @@
 .main-footer {
-    background-color: $color-primary;
+    background-color: $color-light;
+}
+.footer-sections {
+    @include flexbox;
+    padding: u(48px 0);
+}
+.footer-sections__item {
+    width: 25%;
+
+    span {
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: u(12px);
+        color: $color-primary;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            a {
+                color: $color-grey-dark;
+                text-decoration: none;
+                font-size: $font-size-m;
+            }
+        }
+    }
 }

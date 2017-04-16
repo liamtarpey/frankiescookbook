@@ -52,6 +52,15 @@ body {
     width: 100%;
 }
 
-// .sidebar {
-//     width: 27%;
-// }
+.page-header {
+    height: u(500px);
+    background-color: $color-primary;
+    position: relative;
+
+    h1 {
+        @include centre;
+        width: 100%;
+        padding: u(0 24px);
+        text-align: center;
+    }
+}

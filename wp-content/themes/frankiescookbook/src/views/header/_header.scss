@@ -1,4 +1,4 @@
-.app-header {
+.main-header {
     border-bottom: u(1px) solid $color-light;
     @include cf;
     position: absolute;
@@ -7,6 +7,7 @@
     right: 0;
     padding: u(24px 0 20px 0);
     margin: u(0 60px);
+    z-index: 9999999999;
 }
 
 .header__search-prompt {
